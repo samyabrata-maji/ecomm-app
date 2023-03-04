@@ -13,12 +13,12 @@ const variants = {
   icbFillWhiteA700: "bg-white_A700",
 } as const;
 const sizes = {
-  sm: "p-2",
-  md: "p-4",
-  lg: "p-4",
+  sm: "p-[1rem]",
+  md: "px-[2rem] py-[1rem]",
+  lg: "px-[2rem] py-[1rem]",
   xl: "px-[10px] py-[16px]",
-  "2xl": "p-[19px]",
-  "3xl": "px-[16px] py-[19px]",
+  "2xl": "px-[1.5rem] py-[1rem]",
+  "3xl": "px-[2rem] py-[1.5rem]",
   "4xl": "sm:pl-[20px] pl-[23px] py-[23px]",
   "5xl": "sm:pr-[20px] pr-[35px] py-[35px]",
   smIcn: "p-[5px]",

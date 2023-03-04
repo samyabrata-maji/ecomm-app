@@ -16,25 +16,25 @@ const HomepageVOnePage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white_A700 flex flex-col font-poppins items-center justify-start mx-[auto] w-[100%]">
-        <header className="flex items-center justify-center md:px-[20px] w-[100%]">
-          <div className="bg-white_A700 flex items-center justify-center p-[17px] w-[100%]">
-            <div className="flex md:flex-col flex-row md:gap-[20px] items-center justify-center w-[87%]">
-              <div className="flex flex-row gap-[8px] items-center justify-start md:w-[100%] w-[7%]">
+      <div className="bg-white_A700 flex flex-col font-poppins items-center justify-start mx-[auto] w-[100%] overflow-hidden">
+        <header className="p-[1rem] flex items-center justify-center w-[100%]">
+          <div className="flex items-center justify-evenly w-[100%]">
+            <div className="flex items-center justify-between w-[100%] flex-basis-[0]">
+              <div className="flex items-center justify-center flex-grow-[0.25]">
                 <Img
                   src="images/img_volume.svg"
                   className="h-[24px] w-[35%]"
                   alt="volume"
                 />
                 <Text
-                  className="font-bold text-gray_800 text-left w-[auto]"
+                  className="font-bold text-gray-800 text-left w-[auto]"
                   as="h6"
                   variant="h6"
                 >
                   Elliye{" "}
                 </Text>
               </div>
-              <ul className="flex sm:flex-col flex-row gap-[80px] sm:hidden items-start justify-start md:ml-[0] ml-[392px] md:w-[100%] w-[auto] common-row-list">
+              <ul className="flex items-center justify-evenly h-[100%] flex-grow-[0.5]">
                 <li className="mt-[1px] sm:w-[100%] sm:my-[10px] w-[auto]">
                   <a
                     className="common-pointer cursor-pointer font-medium text-[18px] text-gray_800 text-left"
@@ -68,16 +68,16 @@ const HomepageVOnePage: React.FC = () => {
                   </a>
                 </li>
               </ul>
-              <div className="flex flex-row items-center justify-between md:ml-[0] ml-[259px] md:w-[100%] w-[16%]">
+              <div className="flex flex-row items-center justify-between w-[16%]">
                 <Img
                   src="images/img_car.svg"
-                  className="h-[24px] w-[80px]"
+                  className="gap m-[0px] p-[0px]"
                   alt="car"
                 />
                 <Button
-                  className="common-pointer cursor-pointer font-bold leading-[normal] text-[18px] text-center text-white_A700 w-[107px]"
+                  className="common-pointer cursor-pointer font-bold leading-[normal] text-[18px] text-center text-white_A700"
                   onClick={() => navigate("/homepagevtwo")}
-                  size="2xl"
+                  size="md"
                   variant="FillGray800"
                 >
                   Login
@@ -164,17 +164,18 @@ const HomepageVOnePage: React.FC = () => {
                 </Text>
                 <Button
                   className="flex items-center justify-center mt-[56px] text-center"
-                  rightIcon={
-                    <Img
-                      src="images/img_arrowright.svg"
-                      className="ml-[10px] text-center"
-                      alt="arrow_right"
-                    />
-                  }
+                  // rightIcon={
+                  //   <Img
+                  //     src="images/img_arrowright.svg"
+                  //     className="text-center"
+                  //     alt="arrow_right"
+                  //   />
+                  // }
                   size="md"
                   variant="FillGray800"
                 >
-                  <div className="bg-transparent cursor-pointer font-medium font-poppins leading-[normal] sm:text-[20px] md:text-[22px] text-[24px] text-left text-white_A700">
+                  {/* <p>Shop noew</p> */}
+                  <div className="bg-transparent cursor-pointer font-medium font-poppins leading-[normal] sm:text-[20px] md:text-[22px] text-[1.5rem] text-left text-white_A700">
                     Shop Now
                   </div>
                 </Button>
